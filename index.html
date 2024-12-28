@@ -1,13 +1,807 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Spotless Hungry Crocodile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 300vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <hero-wrapper class="hero-wrapper">
+          <!--Hero component-->
+          <div class="hero-header78">
+            <div class="hero-column thq-section-padding thq-section-max-width">
+              <div class="hero-content1">
+                <h1 class="hero-text1 thq-heading-1">
+                  <span>Hi&nbsp;👋 I am junistz.</span>
+                </h1>
+                <p class="hero-text2 thq-body-large">
+                  <fragment class="home-fragment1">
+                    <span class="home-text10">
+                      <span>
+                        Computer Science student passionate about data science,
+                        web development, sports, and self-improvement.
+                      </span>
+                      <br />
+                      <span>
+                        I love tackling new challenges and growing both
+                        personally and professionally while striving to make a
+                        positive impact!
+                      </span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat.
+                    </span>
+                  </fragment>
+                </p>
+              </div>
+              <div class="hero-actions"></div>
+            </div>
+            <div class="hero-content2">
+              <div
+                class="hero-row-container1 thq-mask-image-horizontal thq-animated-group-container-horizontal"
+              >
+                <div class="thq-animated-group-horizontal">
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fHRyYXZlbHxlbnwwfHx8fDE3MzUzOTM1MTl8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image10 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1516100882582-96c3a05fe590?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fHBhc3RhfGVufDB8fHx8MTczNTM5MzU0OXww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image11 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fGdhbWV8ZW58MHx8fHwxNzM1MzkzNTY4fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image12 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1476357471311-43c0db9fb2b4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyN3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                    class="hero-placeholder-image13 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1485548125564-21b2276a644a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5NTU3NHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1500"
+                    class="hero-placeholder-image14 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1593786930094-d5c8164ac771?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5NTU5N3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1500"
+                    class="hero-placeholder-image15 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                </div>
+                <div class="thq-animated-group-horizontal">
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fHRyYXZlbHxlbnwwfHx8fDE3MzUzOTM1MTl8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image16 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1516100882582-96c3a05fe590?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fHBhc3RhfGVufDB8fHx8MTczNTM5MzU0OXww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image17 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fGdhbWV8ZW58MHx8fHwxNzM1MzkzNTY4fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image18 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1476357471311-43c0db9fb2b4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyN3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                    class="hero-placeholder-image19 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1485548125564-21b2276a644a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5NTU3NHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1500"
+                    class="hero-placeholder-image20 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1534312527009-56c7016453e6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIxfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image21 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                </div>
+              </div>
+              <div
+                class="hero-row-container2 thq-mask-image-horizontal thq-animated-group-container-horizontal"
+              >
+                <div class="thq-animated-group-horizontal-reverse">
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1593786930094-d5c8164ac771?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDZ8fGRvZGdlYmFsbHxlbnwwfHx8fDE3MzUzOTM1ODV8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image22 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1625535069703-a67ae00bd6de?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE5fHxkYXRhJTIwc2NpZW5jZXxlbnwwfHx8fDE3MzUzOTM1OTh8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image23 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1477233534935-f5e6fe7c1159?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE0fHxwaWFub3xlbnwwfHx8fDE3MzUzOTM2MTN8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image24 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1518655048521-f130df041f66?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyN3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                    class="hero-placeholder-image25 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyNHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                    class="hero-placeholder-image26 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyNXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                    class="hero-placeholder-image27 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                </div>
+                <div class="thq-animated-group-horizontal-reverse">
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1593786930094-d5c8164ac771?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDZ8fGRvZGdlYmFsbHxlbnwwfHx8fDE3MzUzOTM1ODV8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image28 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1625535069703-a67ae00bd6de?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE5fHxkYXRhJTIwc2NpZW5jZXxlbnwwfHx8fDE3MzUzOTM1OTh8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image29 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1477233534935-f5e6fe7c1159?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE0fHxwaWFub3xlbnwwfHx8fDE3MzUzOTM2MTN8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image30 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1518655048521-f130df041f66?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyN3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                    class="hero-placeholder-image31 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyNHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                    class="hero-placeholder-image32 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                  <img
+                    alt="Hero Image"
+                    src="https://images.unsplash.com/photo-1568214379698-8aeb8c6c6ac8?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEyfHxncmFmaWN8ZW58MHx8fHwxNzE1Nzk0OTk5fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="hero-placeholder-image33 thq-img-ratio-1-1 thq-img-scale"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="hero-container2">
+                <style>
+                  @keyframes scroll-x {
+                    from {
+                      transform: translateX(0);
+                    }
+                    to {
+                      transform: translateX(calc(-100% - 16px));
+                    }
+                  }
+
+                  @keyframes scroll-y {
+                    from {
+                      transform: translateY(0);
+                    }
+                    to {
+                      transform: translateY(calc(-100% - 16px));
+                    }
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </hero-wrapper>
+        <features1-wrapper class="features1-wrapper">
+          <!--Features1 component-->
+          <div class="thq-section-padding">
+            <div class="features1-container2 thq-section-max-width">
+              <div class="features1-image-container">
+                <img
+                  alt="feature 1"
+                  src="public/41aff076-b643-477c-aaff-f3a87aaa3ec4_1_105_c-1400w.jpeg"
+                  class="features1-image1 thq-img-ratio-16-9"
+                />
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyNHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features1-image2 thq-img-ratio-16-9"
+                />
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyMnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features1-image3 thq-img-ratio-16-9"
+                />
+              </div>
+              <div class="features1-tabs-menu">
+                <div class="features1-tab-horizontal1">
+                  <div class="features1-divider-container1">
+                    <div class="features1-container3"></div>
+                  </div>
+                  <div class="features1-content1">
+                    <h2 class="thq-heading-2"><span>Travel #1</span></h2>
+                    <span class="thq-body-small">
+                      <span>
+                        Traveling is my way of connecting with the world. I’ve
+                        been fortunate to explore many countries, each with its
+                        unique charm and culture. Among them, my favorite
+                        destinations are Turkey, Japan, and Australia, where
+                        I’ve experienced breathtaking landscapes, rich
+                        traditions, and warm hospitality. Every journey fuels my
+                        adventurous spirit and leaves me with unforgettable
+                        memories.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="features1-tab-horizontal2">
+                  <div class="features1-divider-container2">
+                    <div class="features1-container4"></div>
+                  </div>
+                  <div class="features1-content2">
+                    <h2 class="thq-heading-2"><span>Game #2</span></h2>
+                    <span class="thq-body-small">
+                      <span>
+                        Gaming is more than just a hobby for me; it’s a space
+                        where I can challenge myself and unwind. I enjoy playing
+                        League of Legends and Starcraft, both of which test my
+                        strategic thinking and quick decision-making. These
+                        games not only entertain me but also help me develop
+                        problem-solving skills and a competitive mindset, while
+                        connecting with friends and fellow gamers.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="features1-tab-horizontal3">
+                  <div class="features1-divider-container3">
+                    <div class="features1-container5"></div>
+                  </div>
+                  <div class="features1-content3">
+                    <h2 class="thq-heading-2"><span>Sports #3</span></h2>
+                    <span class="thq-body-small">
+                      <span>
+                        Sports are my ultimate source of energy and focus. I
+                        love the discipline and camaraderie they bring, whether
+                        I’m running solo, hitting the gym, or playing team
+                        sports like Dodgeball. Staying active helps me maintain
+                        a balance between my academic and personal life, while
+                        also giving me the motivation to push my limits.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </features1-wrapper>
+        <features2-wrapper class="features2-wrapper">
+          <!--Features2 component-->
+          <div id="Features2" class="thq-section-padding">
+            <div class="features2-container2 thq-section-max-width">
+              <div class="features2-tabs-menu">
+                <div class="features2-tab-horizontal1">
+                  <div class="features2-divider-container1">
+                    <div class="features2-container3"></div>
+                  </div>
+                  <div class="features2-content1">
+                    <h2 class="thq-heading-2"><span>Coding #4</span></h2>
+                    <span class="thq-body-small">
+                      <span>
+                        Coding is not just a technical skill for me; it’s a way
+                        to bring ideas to life. I primarily focus on creating
+                        websites and experimenting with different technologies,
+                        constantly exploring new possibilities. Currently, I’m
+                        most interested in developing AI and have worked on
+                        various assignments and projects at school, which have
+                        further fueled my curiosity and passion for this field.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="features2-tab-horizontal2">
+                  <div class="features2-divider-container2">
+                    <div class="features2-container4"></div>
+                  </div>
+                  <div class="features2-content2">
+                    <h2 class="thq-heading-2"><span>Food #5</span></h2>
+                    <span class="thq-body-small">
+                      <span>
+                        I love exploring new cuisines while traveling, as it’s a
+                        great way to experience different cultures. Currently, I
+                        often cook pasta at home, experimenting with different
+                        recipes to create delicious meals. Food is not only a
+                        way to nourish the body but also a source of joy and
+                        creativity for me.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="features2-tab-horizontal3">
+                  <div class="features2-divider-container3">
+                    <div class="features2-container5"></div>
+                  </div>
+                  <div class="features2-content3">
+                    <h2 class="thq-heading-2"><span>Piano #6</span></h2>
+                    <span class="thq-body-small">
+                      <span>
+                        Music is a big part of my life. I particularly enjoy
+                        playing the piano, and it’s a way for me to express
+                        myself and unwind. When I’m working or engaged in tasks,
+                        I often listen to lofi music, which helps me focus and
+                        stay relaxed.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="features2-image-container">
+                <img
+                  alt="feature 1"
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5NTU0NXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features2-image1 thq-img-ratio-16-9"
+                />
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyNHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features2-image2 thq-img-ratio-16-9"
+                />
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1494059980473-813e73ee784b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5MjcyNHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features2-image3 thq-img-ratio-16-9"
+                />
+              </div>
+            </div>
+          </div>
+        </features2-wrapper>
+        <steps-wrapper class="steps-wrapper">
+          <!--Steps component-->
+          <div id="Steps" class="steps-container1 thq-section-padding">
+            <div class="steps-max-width thq-section-max-width">
+              <div class="steps-container2 thq-grid-2">
+                <div class="steps-section-header">
+                  <h2 class="thq-heading-2">Junistz - IT Projects</h2>
+                  <p class="thq-body-large">
+                    Throughout my time at university, I’ve worked on a variety
+                    of IT projects, all of which are stored on GitHub. Most of
+                    my coding projects have been developed using Python, while
+                    data science projects are primarily done in R. Currently, I
+                    am leading an OCR project at my workplace, where I am
+                    responsible for developing and implementing solutions to
+                    automate text extraction from various documents.
+                  </p>
+                  <div class="steps-actions">
+                    <button
+                      class="thq-button-filled thq-button-animated steps-button"
+                    >
+                      <a
+                        href="https://github.com/junistz-dev"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="steps-text3 thq-body-small"
+                      >
+                        junistz-github
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="steps-container3">
+                  <div class="steps-container4 thq-card">
+                    <h2 class="thq-heading-2">
+                      <span>University Projects</span>
+                    </h2>
+                    <span class="steps-text5 thq-body-small">
+                      <span>
+                        During my time at university, I’ve had the opportunity
+                        to work on a wide range of IT projects that have helped
+                        me build a solid foundation in various technologies.
+                        These projects, which are all stored on GitHub, span
+                        across different areas like web development, data
+                        science, and machine learning. I’ve tackled complex
+                        challenges, collaborated with peers, and applied what
+                        I’ve learned in the classroom to real-world scenarios,
+                        constantly expanding my skill set and knowledge.
+                      </span>
+                    </span>
+                    <label class="steps-text6 thq-heading-3">01</label>
+                  </div>
+                  <div class="steps-container5 thq-card">
+                    <h2 class="thq-heading-2">
+                      <span>Personal Projects</span>
+                    </h2>
+                    <span class="steps-text8 thq-body-small">
+                      <span>
+                        I also enjoy working on personal projects to explore new
+                        technologies and ideas. These projects allow me to
+                        experiment freely and creatively, with a focus on
+                        building websites, AI development, and data analysis.
+                        Through these personal endeavors, I’m able to apply my
+                        coding skills in practical ways, whether it’s creating
+                        tools to solve specific problems or experimenting with
+                        emerging technologies to stay ahead of the curve.
+                      </span>
+                    </span>
+                    <label class="steps-text9 thq-heading-3">02</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </steps-wrapper>
+        <banner31-wrapper class="banner31-wrapper">
+          <!--Banner31 component-->
+          <div class="banner31-container1 thq-section-padding">
+            <img
+              alt="Coding Projects"
+              src="https://images.unsplash.com/photo-1556656793-08538906a9f8?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDM5fHxjYXJlZXJ8ZW58MHx8fHwxNzM1Mzk2OTQ2fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+              class="banner31-image thq-img-ratio-16-9"
+            />
+            <div class="banner31-max-width thq-section-max-width">
+              <div class="banner31-container2">
+                <h2 class="banner31-title thq-heading-2">
+                  <fragment class="home-fragment4">
+                    <span class="home-text16">junistz Linkedin</span>
+                  </fragment>
+                </h2>
+                <h3 class="banner31-text1 thq-heading-3">
+                  <fragment class="home-fragment3">
+                    <span class="home-text15">
+                      Feel free to make connection with me
+                    </span>
+                  </fragment>
+                </h3>
+              </div>
+              <button type="button" class="thq-button-filled">
+                <a
+                  href="https://www.linkedin.com/in/junistz/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="banner31-link"
+                >
+                  <fragment class="home-fragment2">
+                    <span class="home-text14">Make connection</span>
+                  </fragment>
+                </a>
+              </button>
+            </div>
+          </div>
+        </banner31-wrapper>
+        <testimonial-wrapper class="testimonial-wrapper">
+          <!--Testimonial component-->
+          <div id="Testimonial" class="thq-section-padding">
+            <div class="testimonial-max-width thq-section-max-width">
+              <div class="testimonial-container10">
+                <h2 class="thq-heading-2"><span>junistz hobby</span></h2>
+                <span class="testimonial-text11 thq-body-small">
+                  <span>I do a lot of things :)</span>
+                </span>
+              </div>
+              <div class="thq-grid-2">
+                <div class="thq-animated-card-bg-2">
+                  <div class="thq-animated-card-bg-1">
+                    <div
+                      data-animated="true"
+                      class="thq-card testimonial-card1"
+                    >
+                      <div class="testimonial-container12">
+                        <img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1580545735260-82b748c1c399?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5NDk0Nnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial-image1"
+                        />
+                        <div class="testimonial-container13">
+                          <strong class="thq-body-large">
+                            <span>Travel</span>
+                          </strong>
+                          <span class="thq-body-small">
+                            <span>Every year, Every day</span>
+                          </span>
+                        </div>
+                      </div>
+                      <span class="testimonial-text14 thq-body-small">
+                        <span>
+                          I love traveling to new places, with my favorite
+                          destinations being Turkey, Japan, and Australia.
+                          Traveling allows me to experience different cultures
+                          and create lasting memories.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="thq-animated-card-bg-2">
+                  <div class="thq-animated-card-bg-1">
+                    <div
+                      data-animated="true"
+                      class="thq-card testimonial-card2"
+                    >
+                      <div class="testimonial-container14">
+                        <img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1469939868368-83e00d69432e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5NDk4MHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial-image2"
+                        />
+                        <div class="testimonial-container15">
+                          <strong class="thq-body-large">
+                            <span>Piano</span>
+                          </strong>
+                        </div>
+                      </div>
+                      <span class="testimonial-text16 thq-body-small">
+                        <span>
+                          Playing the piano is one of my favorite hobbies. It
+                          helps me relax and express myself creatively.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="thq-animated-card-bg-2">
+                  <div class="thq-animated-card-bg-1">
+                    <div
+                      data-animated="true"
+                      class="thq-card testimonial-card3"
+                    >
+                      <div class="testimonial-container16">
+                        <img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1610795868681-4b4ebb6aec43?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5NTA0MXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial-image3"
+                        />
+                        <div class="testimonial-container17">
+                          <strong class="thq-body-large">
+                            <span>Coding</span>
+                          </strong>
+                          <span class="thq-body-small">
+                            <span>Python</span>
+                          </span>
+                        </div>
+                      </div>
+                      <span class="testimonial-text19 thq-body-small">
+                        <span>
+                          I enjoy coding, especially building websites and
+                          exploring AI. I mainly use Python for programming and
+                          R for data science projects.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="thq-animated-card-bg-2">
+                  <div class="thq-animated-card-bg-1">
+                    <div
+                      data-animated="true"
+                      class="thq-card testimonial-card4"
+                    >
+                      <div class="testimonial-container18">
+                        <img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1519834230732-5256fdb7c0d6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5NTA2OHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial-image4"
+                        />
+                        <div class="testimonial-container19">
+                          <strong class="thq-body-large">
+                            <span>Sports</span>
+                          </strong>
+                          <span class="thq-body-small">
+                            <span>Dodgeball, futsal</span>
+                          </span>
+                        </div>
+                      </div>
+                      <span class="testimonial-text22 thq-body-small">
+                        <span>
+                          I stay active by playing Dodgeball and other sports.
+                          It helps me maintain focus and energy while building
+                          teamwork and discipline.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </testimonial-wrapper>
+        <banner3-wrapper class="banner3-wrapper">
+          <!--Banner3 component-->
+          <div id="Banner3" class="banner3-container1 thq-section-padding">
+            <img
+              alt="IT and University Projects"
+              src="https://images.unsplash.com/photo-1554941829-202a0b2403b8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNTM5NTM3OXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+              class="banner3-image thq-img-ratio-16-9"
+            />
+            <div class="banner3-max-width thq-section-max-width">
+              <div class="banner3-container2">
+                <h2 class="banner3-title thq-heading-2">
+                  <fragment class="home-fragment7">
+                    <span class="home-text19">junistz youtube channel</span>
+                  </fragment>
+                </h2>
+                <h3 class="banner3-text1 thq-heading-3">
+                  <fragment class="home-fragment6">
+                    <span class="home-text18">
+                      Documenting my life through technology, coding, and
+                      personal experiences. Join me on this journey of growth
+                      and reflection.
+                    </span>
+                  </fragment>
+                </h3>
+              </div>
+              <a
+                href="https://www.youtube.com/@Junistz"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="banner3-link thq-button-filled"
+              >
+                <span>
+                  <fragment class="home-fragment5">
+                    <span class="home-text17">Subscribe junistz youtube</span>
+                  </fragment>
+                </span>
+              </a>
+            </div>
+          </div>
+        </banner3-wrapper>
+        <contact-wrapper class="contact-wrapper">
+          <!--Contact component-->
+          <div class="contact-contact20 thq-section-padding">
+            <div class="contact-max-width thq-section-max-width">
+              <div class="contact-section-title">
+                <span class="thq-body-small">
+                  <span>Get in touch with me today!</span>
+                </span>
+                <div class="contact-content1">
+                  <h2 class="thq-heading-2"><span>Contact me</span></h2>
+                  <p class="contact-text3 thq-body-large">
+                    <span>
+                      Feel free to reach out to us with any questions or
+                      inquiries. We are here to help!
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-content2">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                    <path
+                      d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                    ></path>
+                  </svg>
+                  <div class="contact-contact-info1">
+                    <div class="contact-content3">
+                      <h3 class="contact-text4 thq-heading-3">Email</h3>
+                      <p class="contact-text5 thq-body-large">
+                        <span>Feel free to ask me anything!</span>
+                      </p>
+                    </div>
+                    <span class="contact-jinjune2014gmailcom thq-body-small">
+                      <span>jinjune2014@gmail.com</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="contact-content4">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                    <path
+                      d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                    ></path>
+                  </svg>
+                  <div class="contact-contact-info2">
+                    <div class="contact-content5">
+                      <h3 class="contact-text6 thq-heading-3">Phone</h3>
+                      <p class="contact-text7 thq-body-large">
+                        <span>Don't hesitate to contact us via WhatsApp</span>
+                      </p>
+                    </div>
+                    <span class="contact-phone thq-body-small">
+                      <span>+601112815495</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="contact-content6">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                    <path
+                      d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
+                    ></path>
+                  </svg>
+                  <div class="contact-contact-info3">
+                    <div class="contact-content7">
+                      <h3 class="contact-text8 thq-heading-3">Office</h3>
+                      <p class="contact-text9 thq-body-large">
+                        <span>Not yet</span>
+                      </p>
+                    </div>
+                    <span class="contact-address thq-body-small">
+                      <span>----</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </contact-wrapper>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
   </body>
 </html>
