@@ -1,0 +1,37 @@
+.features9-layout186 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.features9-text1 {
+  z-index: 2;
+  text-align: center;
+}
+ 
+.features9-text2 {
+  z-index: 2;
+  text-align: center;
+}
+ 
+.features9-fragment1 {
+  display: contents;
+}
+ 
+.features9-text3 {
+  display: inline-block;
+}
+ 
+.features9-fragment2 {
+  display: contents;
+}
+ 
+.features9-text4 {
+  display: inline-block;
+}
